@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CCHS 2004 Batch Get Together</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+
+    <body class="bg-dark">
+        <div class="container-fluid text-center bg-dark text-white">
+            <div class="py-3">
+                <h1 class="h2">CHITTAGONG CANTONMENT HIGHT SCHOOL</h1>
+                <h2 class="h4">SSC 2004 Batch Get Together Registration Form</h2>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg bg-dark  border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registered Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accounts</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Form -->
+        <div class="container my-2 text-white">
+            <div class="bg-dark p-3 rounded">
+                <div class="col-sm-8 py-3 mx-auto">
+                    <form class="row g-3">
+                        <h2 class="h4 text-center">Personal Information</h2>
+                        <hr class="w-25 mx-auto">
+                        <div class="col-md-12">
+                            <label for="full_name" class="form-label">Full Name </label>
+                            <input type="full_name" class="form-control" id="full_name" placeholder="Your Full Name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="facebook" class="form-label">Facebook ID link</label>
+                            <input type="facebook" class="form-control" id="facebook" placeholder="Facebook Link">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="01XX-XXX-XX-XX">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="bloodgroup" class="form-label">Blood Group</label>
+                            <select class="form-select" id="bloodgroup">
+                                <option selected>Choose...</option>
+                                <option value="O +ve">O +ve</option>
+                                <option value="O -ve">O -ve</option>
+                                <option value="A +ve">A +ve</option>
+                                <option value="A -ve">A -ve</option>
+                                <option value="B +ve">B +ve</option>
+                                <option value="B -ve">B -ve</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="profession" class="form-label">Profession</label>
+                            <input type="profession" class="form-control" id="profession"
+                                placeholder="Senior Teacher at CCSH">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="tshirt" class="form-label">T Shirt Size</label>
+                            <select class="form-select" id="tshirt">
+                                <option selected>Choose...</option>
+                                <option value="1">S -Small</option>
+                                <option value="2">M - Medium</option>
+                                <option value="3">L - Large</option>
+                                <option value="3">XL - Extra Large</option>
+                                <option value="3">XXL -Extra Extra Large</option>
+                                <option value="3">XXXL - Extra Extra Extra Large</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12 my-3"></div>
+                        <h2 class="h4 text-center">Guests (Optional)</h2>
+                        <hr class="mx-auto w-75">
+
+
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="spouse_check">
+                                <label class="form-check-label" for="spouse_check">
+                                    Spouse
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="child_checkbox">
+                                <label class="form-check-label" for="child_checkbox">
+                                    Children
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12" id="numberOfChildrenDiv" style="display: none;">
+                            <div class="form-group">
+                                <label for="numberOfChildren" class="form-label">Number of Children (Age above 4
+                                    years)</label>
+                                <input type="number" class="form-control" id="numberOfChildren" min="0"
+                                    placeholder="Enter the number">
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12 my-3"></div>
+                        <h2 class="h4 text-center">Payment Information</h2>
+                        <hr class="mx-auto w-75">
+
+
+                        <div class="col-md-6">
+                            <label for="total_member" class="form-label">Total Member</label>
+                            <input type="text" class="form-control" id="total_member" value="1" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="total_amount" class="form-label">Total Amount</label>
+                            <input type="text" class="form-control" id="total_amount" value="2000" readonly>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label for="payment_method" class="form-label">Payment Method</label>
+                            <select class="form-select" id="payment_method"> <!-- Updated id to "payment_method" -->
+                                <option selected>Choose...</option>
+                                <option value="bkash">Bkash</option>
+                                <option value="nagad">Nagad</option>
+                                <option value="handcash">Hand Cash</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label for="service_charge" class="form-label">Service Charge</label>
+                            <input type="text" class="form-control" id="service_charge" value="0.00" readonly>
+                        </div>
+
+
+                        <div class="col-md-6" id="hand_cash_to_div" style="display: none;">
+                            <label for="hand_cash_to" class="form-label">Hand Cash To</label>
+                            <input type="text" class="form-control" id="hand_cash_to" placeholder="Name of the Person">
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <label for="total_payable" class="form-label">Total Amount needs to Pay</label>
+                            <input type="text" class="form-control" id="total_payable" readonly>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <label for="bkash_nagad" class="form-label">Bkash/Nagad Number (Personal)</label>
+                            <input type="text" class="form-control-plaintext text-danger h-3 fw-bold" id="bkash_nagad"
+                                value="01790007709">
+
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="transaction_id" class="form-label">Transaction Id</label>
+                            <input type="text" class="form-control" id="transaction_id">
+                        </div>
+
+
+
+
+
+                        <div class="col-12 my-5">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </form>
+
+
+
+
+
+        <script src="apps.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
